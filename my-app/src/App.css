@@ -1,6 +1,32 @@
-/* .board-row {
+.board-row, .game {
   display: flex;
   justify-content: center;
+}
 
-} */
- 
+.game {
+  margin: 50px auto;
+}
+
+.square, .game-info>ol>li>button{
+  cursor: pointer;
+  background-color: #ededed;
+  border: 0.5px solid #cdcdcd;
+  transition: background-color 0.3s;
+}
+.square {
+  width: 80px;
+  height: 80px;
+  font-size: 24px;
+  
+}
+
+.square:hover, .game-info>ol>li>button:hover {
+  background-color: #cdcdcd;
+}
+
+.game-info>ol>li>button{
+  margin-bottom: 5px;
+  font-size: 16px;
+  padding: 5px;
+  min-width: 48px;
+}
